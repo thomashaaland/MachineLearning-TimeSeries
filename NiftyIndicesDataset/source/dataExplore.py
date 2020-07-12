@@ -1,17 +1,21 @@
+# -*Python*-
+"""
+From kaggle. 
+"""
+
 from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
 import pandas as pd
 import seaborn as sns; sns.set(style="whitegrid", color_codes=True)
 import seaborn_qqplot as sqp
-
 import numpy as np
-
 import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.rc('xtick', labelsize=20)
 matplotlib.rc('ytick', labelsize=20)
-
 from statsmodels.tsa.stattools import acf, pacf
+import plotly.express as px
+from pandas_profiling import ProfileReport
 
 print("Pandas version: " + pd.__version__)
 print("Seaborn version: " + sns.__version__)
